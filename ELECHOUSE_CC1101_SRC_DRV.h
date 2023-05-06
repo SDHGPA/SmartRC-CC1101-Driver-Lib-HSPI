@@ -118,7 +118,6 @@ private:
   void SpiEnd(void);
   void GDO_Set (void);
   void GDO0_Set (void);
-  void Reset (void);
   void setSpi(void);
   void RegConfigSettings(void);
   void Calibrate(void);
@@ -128,6 +127,7 @@ private:
   void Split_MDMCFG2(void);
   void Split_MDMCFG4(void);
 public:
+  void Reset (void);
   void Init(void);
   byte SpiReadStatus(byte addr);
   void setSpiPin(byte sck, byte miso, byte mosi, byte ss);
